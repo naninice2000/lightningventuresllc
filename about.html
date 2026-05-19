@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Lightning Ventures LLC</title>
+  <meta name="description" content="About Lightning Ventures LLC, a financial education and analysis company focused on practical guidance for individuals and families.">
+  <meta name="theme-color" content="#06162b">
+  <link rel="icon" href="assets/logo-icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-active="about">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Lightning Ventures LLC Home">
+      <img class="brand-mark" src="assets/logo-icon.png" onerror="this.src='assets/fallback-logo.svg'" alt="Lightning Ventures LLC logo icon">
+      <span class="brand-text">
+        <strong>LIGHTNING</strong>
+        <span>Ventures LLC</span>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="nav-links" aria-label="Primary navigation">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About Us</a>
+      <a href="services.html" data-page="services">Products & Services</a>
+      <a href="contact.html" data-page="contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb">About Us</p>
+    <h1>Built to make financial education practical, clear, and family-centered.</h1>
+    <p class="lead">Lightning Ventures LLC helps individuals and families make wiser financial choices through books, educational programs, and thoughtful financial analysis.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div class="card">
+      <h2>Who We Are</h2>
+      <p>At Lightning Ventures LLC, we believe financial confidence should not be reserved for experts, wealthy families, or people who already understand every financial term. Every individual and family deserves access to clear, practical, and trustworthy financial education.</p>
+      <p>Our goal is to help people understand money in a way that makes their financial life smoother, stronger, and more joyful.</p>
+    </div>
+    <div class="card">
+      <h2>Why We Exist</h2>
+      <p>Many families want to make better financial decisions, but they often feel overwhelmed by confusing concepts, complicated products, emotional pressure, or scattered information. We created Lightning Ventures LLC to help bridge that gap.</p>
+      <p>We simplify complex ideas and turn them into practical knowledge people can actually use.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow">Our Mission</p>
+      <h2>Move people from confusion to clarity.</h2>
+      <p>We help people move from hesitation to action and from financial stress to financial confidence through education, analysis, and practical guidance.</p>
+    </div>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Beginner-friendly education</h3>
+        <p>We avoid unnecessary jargon and explain financial concepts in a calm, practical, and relatable way.</p>
+      </article>
+      <article class="card">
+        <h3>Real-life relevance</h3>
+        <p>Money decisions affect family, security, peace of mind, opportunity, and the future people want to build.</p>
+      </article>
+      <article class="card">
+        <h3>Purposeful choices</h3>
+        <p>Wise financial choices are made with clarity, patience, education, and purpose—not fear.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Lightning Ventures LLC</h3>
+        <p>Financial education, practical guidance, and thoughtful analysis for individuals and families who want to make wiser financial choices.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="services.html">Products & Services</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="tel:+14088277789">+1 408-827-7789</a>
+          <a href="mailto:support@lightningventuresllc.com">support@lightningventuresllc.com</a>
+          <a href="https://lightningventuresllc.com">lightningventuresllc.com</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Lightning Ventures LLC. All rights reserved.</p>
+    <p class="disclaimer">Educational disclaimer: Content and services are intended for general financial education and analysis. They are not a substitute for personalized legal, tax, investment, or financial advice from a licensed professional.</p>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<script>
+  document.querySelectorAll(".nav-links a").forEach(a => {
+    if (a.dataset.page === document.body.dataset.active) a.classList.add("active");
+  });
+</script>
+</body>
+</html>

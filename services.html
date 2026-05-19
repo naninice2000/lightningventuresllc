@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products & Services | Lightning Ventures LLC</title>
+  <meta name="description" content="Products and services from Lightning Ventures LLC including books, educational programs, and personal and family financial analysis.">
+  <meta name="theme-color" content="#06162b">
+  <link rel="icon" href="assets/logo-icon.png">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-active="services">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Lightning Ventures LLC Home">
+      <img class="brand-mark" src="assets/logo-icon.png" onerror="this.src='assets/fallback-logo.svg'" alt="Lightning Ventures LLC logo icon">
+      <span class="brand-text">
+        <strong>LIGHTNING</strong>
+        <span>Ventures LLC</span>
+      </span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    <nav id="site-menu" class="nav-links" aria-label="Primary navigation">
+      <a href="index.html" data-page="home">Home</a>
+      <a href="about.html" data-page="about">About Us</a>
+      <a href="services.html" data-page="services">Products & Services</a>
+      <a href="contact.html" data-page="contact">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb">Products & Services</p>
+    <h1>Education, publications, programs, and analysis for better financial decisions.</h1>
+    <p class="lead">Our work supports individuals and families who want to understand financial concepts, evaluate choices, and build stronger financial well-being.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-2">
+      <article class="card">
+        <div class="card-icon">📘</div>
+        <h2>Books & Publications</h2>
+        <p>We publish practical, reader-friendly books on personal financial planning, family protection, estate planning awareness, wealth-building habits, and long-term financial decision-making.</p>
+        <ul class="check-list">
+          <li>Beginner-friendly explanations</li>
+          <li>Real-life examples and frameworks</li>
+          <li>Action-oriented checklists and worksheets</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-icon">🎓</div>
+        <h2>Educational Programs</h2>
+        <p>We conduct learning programs designed to help individuals, families, and groups understand key financial concepts without feeling overwhelmed.</p>
+        <ul class="check-list">
+          <li>Financial education workshops</li>
+          <li>Family financial awareness sessions</li>
+          <li>Concept-based learning programs</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-icon">📊</div>
+        <h2>Financial Analysis</h2>
+        <p>We offer practical analysis to help people understand options, compare scenarios, and think through financial decisions with more clarity.</p>
+        <ul class="check-list">
+          <li>Personal and family financial analysis</li>
+          <li>Scenario comparisons and trade-offs</li>
+          <li>Planning-focused decision support</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="card-icon">🏡</div>
+        <h2>Financial Wellbeing Guidance</h2>
+        <p>We help families think through the habits, systems, and decisions that can support smoother day-to-day money management and long-term stability.</p>
+        <ul class="check-list">
+          <li>Budgeting and savings awareness</li>
+          <li>Family protection education</li>
+          <li>Long-term planning concepts</li>
+        </ul>
+      </article>
+    </div>
+    <p class="disclaimer">Important: Lightning Ventures LLC provides educational content and analysis. Services do not replace professional legal, tax, investment, insurance, or financial advice. For personalized advice, consult the appropriate licensed professional.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="banner">
+      <div>
+        <h2>Need a program, book collaboration, or financial education session?</h2>
+        <p>Contact us with your goal and we will help identify the right next step.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Lightning Ventures LLC</h3>
+        <p>Financial education, practical guidance, and thoughtful analysis for individuals and families who want to make wiser financial choices.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="services.html">Products & Services</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <div class="footer-links">
+          <a href="tel:+14088277789">+1 408-827-7789</a>
+          <a href="mailto:support@lightningventuresllc.com">support@lightningventuresllc.com</a>
+          <a href="https://lightningventuresllc.com">lightningventuresllc.com</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Lightning Ventures LLC. All rights reserved.</p>
+    <p class="disclaimer">Educational disclaimer: Content and services are intended for general financial education and analysis. They are not a substitute for personalized legal, tax, investment, or financial advice from a licensed professional.</p>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<script>
+  document.querySelectorAll(".nav-links a").forEach(a => {
+    if (a.dataset.page === document.body.dataset.active) a.classList.add("active");
+  });
+</script>
+</body>
+</html>
